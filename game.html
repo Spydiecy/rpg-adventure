@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Adventure - Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-board">
+            <div id="player-container">
+                <img id="player-image" src="images/player.png" alt="Player">
+                <div id="player-info">
+                    <p>Player</p>
+                    <div id="player-health-bar" class="health-bar">
+                        <div id="player-health-fill" class="health-fill"></div>
+                    </div>
+                    <p>HP: <span id="player-health">100 / 100</span></p>
+                </div>
+            </div>
+            <div id="enemy-container">
+                <img id="enemy-image" src="images/skeleton.png" alt="Enemy">
+                <div id="enemy-info">
+                    <p id="enemy-name">Skeleton</p>
+                    <div id="enemy-health-bar" class="health-bar">
+                        <div id="enemy-health-fill" class="health-fill"></div>
+                    </div>
+                    <p>HP: <span id="enemy-health">40 / 40</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <button id="attack-btn">Attack</button>
+            <button id="defend-btn">Defend</button>
+            <button id="heal-btn">Heal</button>
+            <button id="special-btn">Special Move</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
